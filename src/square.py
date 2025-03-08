@@ -7,8 +7,8 @@ class Square(Figure):
         self.validate_square()
 
     def validate_square(self):
-        if len(self.lines) not in (4, 2):
-            raise ValueError("Для вычисления сторон должно быть 4 или 2!")
+        if len(self.lines) not in (4, 2, 1):
+            raise ValueError("Для вычисления сторон должно быть 4, 2 или 1!")
         elif len(self.lines) == 4:
             a, b, c, d = self.lines
             if not (a == b == c == d):
@@ -18,7 +18,8 @@ class Square(Figure):
                 raise ValueError("Все стороны квадрата должны быть равны!")
 
     def get_area(self):
-        return self.lines[0] * 4
+        return self.lines[0] ** 2
+        
 
     def get_perimeter(self):
-        return self.lines[0] ** 2
+        return self.lines[0] * 4

@@ -9,6 +9,9 @@ class Triangle(Figure):
     def validate_triangle(self):
         if len(self.lines) != 3:
             raise ValueError("Для вычисления должно быть указано только 3 стороны!")
+        elif self.lines[-1]>=(self.lines[0]+self.lines[1]):
+            raise ValueError("Такого треугольника не существует!") 
+            
 
     def get_area(self):
         a, b, c = self.lines

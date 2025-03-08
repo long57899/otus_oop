@@ -9,7 +9,8 @@ class Figure:
         self.lines = sorted(args)
 
     def add_area(self, figure):
-        if not hasattr(figure, "get_area"):
+     #   if not hasattr(figure, "get_area"):
+        if not isinstance(figure, Figure):
             raise ValueError(f"\"{figure}' - не является наследником Figure!")
         else:
             return figure.get_area() + self.get_area()

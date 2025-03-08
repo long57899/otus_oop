@@ -13,7 +13,7 @@ class Rectangle(Figure):
             a, b, c, d = self.lines
             if not (a == b and c == d):
                 raise ValueError(
-                    "Противоположные стороны прямоугольника должны быть равны."
+                    "Стороны должны быть попарно равны!"
                 )
 
     def get_area(self):
