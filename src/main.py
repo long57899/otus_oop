@@ -9,4 +9,4 @@ if __name__ == "__main__":
     s = Square(2)
     c = Circle(2)
     a = 2
-    print(s.get_perimeter())
+    
