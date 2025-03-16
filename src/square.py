@@ -18,8 +18,8 @@ class Square(Figure):
                 raise ValueError("Все стороны квадрата должны быть равны!")
 
     def get_area(self):
-        return self.lines[0] ** 2
+        return round(self.lines[0] ** 2 ,3)
         
 
     def get_perimeter(self):
-        return self.lines[0] * 4
+        return round(self.lines[0] * 4 ,3)

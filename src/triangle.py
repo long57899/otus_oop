@@ -16,10 +16,10 @@ class Triangle(Figure):
     def get_area(self):
         a, b, c = self.lines
         s = (a + b + c) / 2
-        return (s * (s - a) * (s - b) * (s - c)) ** 0.5
+        return round((s * (s - a) * (s - b) * (s - c)) ** 0.5 , 3)
 
     def get_perimeter(self):
         perimeter = 0
         for line in self.lines:
             perimeter += line
-        return perimeter
+        return round(perimeter ,3)

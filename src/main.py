@@ -4,9 +4,9 @@ from square import Square
 from circle import Circle
 
 if __name__ == "__main__":
-    t = Triangle(3, 3, 3)
-    r = Rectangle(2, 3, 2, 3)
-    s = Square(2)
+    t = Triangle(4, 4, 4)
+    r = Rectangle(5, 6)
+    s = Square(4)
     c = Circle(2)
     a = 2
-    
+ 
