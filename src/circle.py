@@ -13,7 +13,7 @@ class Circle(Figure):
             raise ValueError("Для вычисления нужен только радиус!")
 
     def get_area(self):
-        return self.pi * (self.lines[0] ** 2)
+        return round(self.pi * (self.lines[0] ** 2),3)
 
     def get_perimeter(self):
-        return 2 * self.pi * self.lines[0]
+        return round(2 * self.pi * self.lines[0],3)

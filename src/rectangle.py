@@ -17,7 +17,7 @@ class Rectangle(Figure):
                 )
 
     def get_area(self):
-        return self.lines[0] * self.lines[-1]
+        return round(self.lines[0] * self.lines[-1],3)
 
     def get_perimeter(self):
-        return (self.lines[0] * 2) + (self.lines[-1] * 2)
+        return round((self.lines[0] * 2) + (self.lines[-1] * 2),)
